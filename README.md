@@ -1,6 +1,6 @@
 # Twitter Sentiment Analysis with Python
 
-
+## Project Description
 
 This project aims to perform sentiment analysis on tweets related to a specific topic using Python and its libraries. The goal is to classify tweets into positive, negative, or neutral sentiments and visualize insights from the analysis.
 
