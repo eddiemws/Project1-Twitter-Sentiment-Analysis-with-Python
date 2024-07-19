@@ -7,7 +7,7 @@ from gensim.models import Word2Vec  # Word embeddings (optional)
 import matplotlib.pyplot as plt  # Visualization
 import seaborn as sns  # Advanced visualization
 
-# (Replace with your Twitter API credentials)
+
 consumer_key = "..."
 consumer_secret = "..."
 access_token = "..."
@@ -59,13 +59,7 @@ def analyze_tweet_sentiment(model, tweet):
     else:
         return "Neutral"
 
-# Function to visualize sentiment distribution (using Seaborn)
-def visualize_sentiment_distribution(labels):
-    sns.countplot(labels)
-    plt.xlabel("Sentiment")
-    plt.ylabel("Count")
-    plt.title("Sentiment Distribution of Tweets")
-    plt.show()
+
 
 # Function to create a word cloud (using advanced libraries)
 def create_wordcloud(tweets, positive_words, negative_words):
