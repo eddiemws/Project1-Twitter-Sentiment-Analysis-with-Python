@@ -7,7 +7,11 @@ from gensim.models import Word2Vec  # Word embeddings (optional)
 import matplotlib.pyplot as plt  # Visualization
 import seaborn as sns  # Advanced visualization
 
-
+# (Replace with your Twitter API credentials)
+consumer_key = "..."
+consumer_secret = "..."
+access_token = "..."
+access_token_secret = "..."
 
 # Function to authenticate Twitter API
 def authenticate_twitter():
