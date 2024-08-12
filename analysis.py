@@ -21,7 +21,18 @@ def authenticate_twitter():
     return api
 
 # Function to clean and preprocess tweets
-
+def preprocess_tweet(text):
+    # Lowercase text
+    text = text.lower()
+    # Remove special characters
+    text = re.sub(r"[^a-zA-Z0-9_]", " ", text)
+    # Remove stopwords
+    stop_words = stopwords.words('english')
+    text = [word for word in text.split() if word not in stop_words]
+    # Lemmatization (optional)
+    lemmatizer = WordNetLemmatizer()
+    text = [lemmatizer.lemmatize(word) for word in text]
+    return " ".join(text)
 
 # Function to extract features using TF-IDF
 def extract_tfidf_features(tweets):
