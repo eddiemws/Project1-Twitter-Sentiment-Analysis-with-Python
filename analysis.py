@@ -1,4 +1,11 @@
-
+import tweepy  # Twitter API access
+from nltk.corpus import stopwords  # Stopword removal
+from nltk.stem import WordNetLemmatizer  # Lemmatization
+from sklearn.feature_extraction.text import TfidfVectorizer  # TF-IDF
+from sklearn.ensemble import RandomForestClassifier  # Machine Learning model
+from gensim.models import Word2Vec  # Word embeddings (optional)
+import matplotlib.pyplot as plt  # Visualization
+import seaborn as sns  # Advanced visualization
 
 
 consumer_key = "..."
