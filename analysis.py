@@ -57,7 +57,7 @@ def analyze_tweet_sentiment(model, tweet):
     elif prediction == 1:
         return "Positive"
     else:
-     
+           return "Neutral"     
 
 # Function to visualize sentiment distribution (using Seaborn)
 def visualize_sentiment_distribution(labels):
