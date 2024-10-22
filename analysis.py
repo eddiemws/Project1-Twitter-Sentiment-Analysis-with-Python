@@ -11,7 +11,7 @@ import seaborn as sns  # Advanced visualization
 consumer_key = "..."
 consumer_secret = "..."
 access_token = "..."
-
+access_token_secret = "..."
 
 # Function to authenticate Twitter API
 def authenticate_twitter():
